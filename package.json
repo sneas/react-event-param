@@ -1,0 +1,37 @@
+{
+  "name": "react-event-param",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "commit": "npx git-cz",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneas/react-event-param.git"
+  },
+  "keywords": [
+    "react",
+    "event",
+    "callback",
+    "param"
+  ],
+  "author": "Dima Snisarenko <snisarenkodima@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sneas/react-event-param/issues"
+  },
+  "homepage": "https://github.com/sneas/react-event-param#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "3.0.7",
+    "cz-conventional-changelog": "2.1.0",
+    "typescript": "3.3.3333"
+  }
+}
