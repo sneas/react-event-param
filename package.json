@@ -1,7 +1,7 @@
 {
   "name": "react-event-param",
   "version": "1.0.0",
-  "description": "",
+  "description": "Provide extra param into DOM event handler. Avoid memory-consuming bindings or arrow functions in callbacks.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc",

@@ -1,20 +1,15 @@
 # react-event-param
 
-Set event params while rendering and get them back in callback function.
-No bind and arrow functions required.
+The library provides a way of setting an extra param for a DOM event handler.
+And avoid memory-consuming bindings or arrow functions.
 
 ## Usage Example
 
 ```javascript
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { setEventParam, getEventParam } from "react-event-param";
 
 class ItemList extends Component {
-  static propTypes = {
-    items: PropTypes.arrayOf(PropTypes.string)
-  };
-
   state = {
     selectedIndex: null
   };
