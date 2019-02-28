@@ -27,7 +27,7 @@ jobs:
           command: npm run build
       - run:
           name: Release
-          command: npm run semantic-release || true
+          command: npm run semantic-release
 workflows:
   version: 2
   test-and-deploy:
