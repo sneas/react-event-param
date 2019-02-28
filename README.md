@@ -1,6 +1,6 @@
 # react-event-param
 
-The library provides a way of setting an extra param for a DOM event handler.
+Provide custom param for DOM event handler.
 And avoid memory-consuming bindings or arrow functions.
 
 ## Usage Example
