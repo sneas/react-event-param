@@ -1,21 +1,8 @@
-const PROP_NAME = 'event-param';
+import { stringifyProp } from './stringify-prop';
+import { parseTargetProp } from './parse-target-prop';
 
-export const setEventParam = (value: any) => {
-    return {
-        [PROP_NAME]: JSON.stringify(value),
-    };
-};
+export const PROP_NAME = 'event-param';
 
-export const getEventParam = <T>(startNode: HTMLElement): T => {
-    let node: HTMLElement | null = startNode;
+export const getEventParam = parseTargetProp(PROP_NAME);
 
-    do {
-        if (node.getAttribute(PROP_NAME) !== null) {
-            return <T>JSON.parse(<string>node.getAttribute(PROP_NAME));
-        }
-
-        node = node.parentElement;
-    } while (node !== null);
-
-    throw new Error(`Couldn't find node with attribute ${PROP_NAME}`);
-};
+export const setEventParam = stringifyProp(PROP_NAME);
