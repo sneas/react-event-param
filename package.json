@@ -7,6 +7,7 @@
     "build": "rimraf dist && tsc",
     "commit": "npx git-cz",
     "precommit": "lint-staged",
+    "semantic-release": "semantic-release",
     "test": "jest"
   },
   "repository": {
@@ -37,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/git": "^7.0.8",
     "@types/jest": "^24.0.9",
     "commitizen": "3.0.7",
     "cz-conventional-changelog": "2.1.0",
@@ -48,5 +50,19 @@
     "semantic-release": "^15.13.3",
     "ts-jest": "^24.0.0",
     "typescript": "3.3.3333"
+  },
+  "release": {
+    "branch": "master",
+    "prepare": [
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
   }
 }
