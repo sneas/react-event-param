@@ -7,7 +7,6 @@
     "build": "rimraf dist && tsc",
     "commit": "npx git-cz",
     "precommit": "lint-staged",
-    "semantic-release": "semantic-release",
     "test": "jest"
   },
   "repository": {
