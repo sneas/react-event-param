@@ -1,6 +1,6 @@
 {
   "name": "react-event-param",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide custom param for DOM event handler. Avoid memory-consuming bindings or arrow functions.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
