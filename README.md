@@ -1,7 +1,16 @@
 # react-event-param
 
+[![version](https://img.shields.io/npm/v/react-event-param.svg?style=flat-square)](http://npm.im/react-event-param)
+[![MIT License](https://img.shields.io/npm/l/react-event-param.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
 Provide custom param for DOM event handler.
 And avoid memory-consuming bindings or arrow functions.
+
+## Installation
+
+```bash
+npm install --save react-event-param
+```
 
 ## Usage Example
 
