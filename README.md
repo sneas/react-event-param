@@ -3,7 +3,7 @@
 [![version](https://img.shields.io/npm/v/react-event-param.svg?style=flat-square)](http://npm.im/react-event-param)
 [![MIT License](https://img.shields.io/npm/l/react-event-param.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-Provide custom param for DOM event handler.
+Provide custom param to DOM event handler.
 And avoid memory-consuming bindings or arrow functions.
 
 ## Installation
@@ -18,7 +18,7 @@ npm install --save react-event-param
 import React, { Component } from "react";
 import { setEventParam, getEventParam } from "react-event-param";
 
-class ItemList extends Component {
+class List extends Component {
   state = {
     selectedIndex: null
   };
@@ -47,6 +47,6 @@ class ItemList extends Component {
   }
 }
 
-export default ItemList;
+export default List;
 
 ```
